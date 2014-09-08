@@ -1,3 +1,0 @@
-activer page de maintenanc = préférences->maintenance
-déplacer block = modules->positions->liveEdit
-
