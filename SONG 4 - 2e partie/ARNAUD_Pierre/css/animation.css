@@ -1,0 +1,51 @@
+body{
+	/*background-color:#ddd;*/
+}
+
+#ecran{
+	animation:slidevignette 150s cubic-bezier(.26,.71,.84,.15)  infinite;
+	-webkit-animation:slidevignette 150s cubic-bezier(.26,.71,.84,.15)  infinite;
+	-moz-animation:slidevignette 150s cubic-bezier(.26,.71,.84,.15) infinite;
+}
+
+@keyframes slidevignette{
+	0%, 2%{left:0;}
+	4%, 6%{left:-100%;}
+	8%, 10%{left:-200%;}
+	12%, 14%{left:-300%;}
+	16%, 18%{left:-400%;}
+	20%, 22%{left:-500%;}
+	24%, 26%{left:-600%;}
+	28%, 30%{left:-700%;}
+	32%, 34%{left:-800%;}
+	36%, 38%{left:-900%;}
+	40%, 42%{left:-1000%;}
+	44%, 46%{left:-1100%;}
+	48%, 50%{left:-1200%;}
+	52%, 54%{left:-1300%;}
+	56%, 58%{left:-1400%;}
+	60%, 62%{left:-1500%;}
+	64%, 66%{left:-1600%;}
+	68%, 70%{left:-1700%;}
+	72%, 74%{left:-1800%;}
+	76%, 78%{left:-1900%;}
+	80%, 82%{left:-2000%;}
+	84%, 86%{left:-2100%;}
+	88%, 100%{left:-2300%;}
+	/*95%, 100%{left:-2400%;}*/
+}
+/*
+@-webkit-keyframes slidevignette{
+	0%, 11%{left:0;}
+	22%, 44%{left:-100%;}
+	55%, 77%{left:-200%;}
+	88%, 100%{left:-300%;}
+}
+
+@-moz-keyframes slidevignette{
+	0%, 11%{left:0;}
+	22%, 44%{left:-100%;}
+	55%, 77%{left:-200%;}
+	88%, 100%{left:-300%;}
+}
+*/

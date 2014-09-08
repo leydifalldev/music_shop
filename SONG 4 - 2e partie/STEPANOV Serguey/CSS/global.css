@@ -1,0 +1,136 @@
+body{
+	width: 1024px;
+	margin: auto;
+	background-color:black;
+	color: white;
+	line-height: 0.85em;
+	font-family:"Arial", Times, serif;
+}
+header{
+	height: 200px;
+	background: url("../IMAGES/header.jpg");
+	text-align:center;
+	color:#D7AE6F;
+	top: 4em;
+	font-size: 200%;
+}
+div.description{
+	top: 200px;
+	margin-left: 3em;
+	text-align:right;
+}
+div.horaires{
+	float: left;
+	text-align:left;
+	
+}
+div.williams{
+	text-align:center;
+}
+div.williams>h5{
+	float: right;
+	text-align:left;
+}
+div.williams>ul{
+	text-align:center;
+}
+@font-face{
+	font-family: 'maPolice';
+	src:url('font1.ttf');
+}
+header{
+	font-family: maPolice;
+}
+@font-face{
+	font-family: 'maPolice2';
+	src:url('font.ttf');
+}
+#next{
+	display: inline-block;
+	list-style:none;
+}
+li{
+	list-style-type: none;
+}
+div.musiciens{
+	text-align: center;
+}
+@font-face{
+	font-family: 'maPolice3';
+	src:url('font3.ttf');
+}
+div.musiciens h4{
+	font-family: maPolice2;
+	font-size: 300%;
+}
+div.description h4{
+	font-family: maPolice2;
+	font-size: 300%;
+}
+div.horaires h4{
+	font-family: maPolice2;
+	font-size: 300%;
+}
+a{
+	color: white;
+}
+div.goldsmith{
+	text-align:center;
+}
+div.goldsmith>h5{
+	float: right;
+	text-align:left;
+}
+div.goldsmith>ul{
+	text-align:center;
+}
+div.zimmer{
+	text-align:center;
+}
+div.zimmer>h5{
+	float: right;
+	text-align:left;
+}
+div.zimmer>ul{
+	text-align:center;
+}
+div.horner{
+	text-align:center;
+}
+div.horner>h5{
+	float: right;
+	text-align:left;
+}
+div.horner>ul{
+	text-align:center;
+}
+div.elfman{
+	text-align:center;
+}
+div.elfman>h5{
+	float: right;
+	text-align:left;
+}
+div.elfman>ul{
+	text-align:center;
+}
+div.silvestri{
+	text-align:center;
+}
+div.silvestri>h5{
+	float: right;
+	text-align:left;
+}
+div.silvestri>ul{
+	text-align:center;
+}
+div.hisaishi{
+	text-align:center;
+}
+div.hisaishi>h5{
+	float: right;
+	text-align:left;
+}
+div.hisaishi>ul{
+	text-align:center;
+}

@@ -1,0 +1,43 @@
+body{font-family: calibri, arial, sans-serif;}
+
+header{ border-top: 10px; height: 200px; border: 1px solid gray; text-align: center; background-color: #e1f5d1; /*background-image: url('images/music.jpg');*/}
+
+nav{border: 1px solid black;}
+nav>ul{list-style-type: none; text-align: center;}
+nav>ul>li>a{text-decoration: none;}
+nav>ul>li{display: inline-block; width: 20%;}
+
+#compositeurs{width: 70%; margin-left: 15%; margin-right: 15%;}
+#col1{width: 30%; height: 70px;}
+#col2{width: 30%;}
+#col3{width: 30%;}
+td{text-align: center;}
+
+h2{text-align: center;}
+
+#film{width: 70%; margin-left: 15%; margin-right: 15%;}
+#film>table{/*margin-left: 20%;margin-right: 20%;*/ text-align: center; border-collapse: collapse;margin-left: 10%;}
+#film td, #film th{border: 1px solid black;}
+#tab1{width: 40%;}
+#tab2{width: 25%;}
+#tab3{width: 25%;}
+#tab4{width: 10%;}
+
+#contact{width: 70%; margin-left: 15%; margin-right: 15%;}
+#form_cont>form{padding: 40px;}
+#form_cont>form>label{display: inline-block; width: 100px;}
+#form_cont>form>input{
+    	width: 200px;
+}
+
+#contact>p{text-align: center;}
+
+section{margin-bottom: 50px}
+
+#reservation{width: 70%; margin-left: 15%; margin-right: 15%;}
+#inscription{width: 70%; margin-left: 15%; margin-right: 15%;}
+
+#bloc_insc form label{display: inline-block; width: 200px;}
+
+footer{width: 70%; margin-left: 15%; margin-right: 15%; margin-bottom: 50px;}
+

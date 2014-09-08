@@ -1,0 +1,159 @@
+/*
+    ____  ____  ______  _______  _____ ____  __  _______ __________ __ ___  ____ 
+   / __ \/ __ \/  _/  |/  / __ \/ ___// __ \/  |/  / __ \__  <  / // /<  / / __ \
+  / /_/ / /_/ // // /|_/ / / / / __ \/ /_/ / /|_/ / / / //_ </ / // /_/ / / / / /
+ / _, _/ ____// // /  / / /_/ / /_/ / _, _/ /  / / /_/ /__/ / /__  __/ /_/ /_/ / 
+/_/ |_/_/   /___/_/  /_/_____/\____/_/ |_/_/  /_/\____/____/_/  /_/ /_/(_)____/  
+
+*/                   
+/*##################################
+
+• Projet : RPIMD6
+• Auteur: RM
+• Date de mofication : Mars 2014
+• Version : 1.0
+
+##################################*/
+/* General */
+@import url("animation.css");
+
+body {
+	margin: 0px;
+	font-family:'police';
+	width: 1024px;
+	height: 700px;
+	margin: auto;
+}
+
+/* Debut header */
+#wrapper>header>nav ul li{ 
+	display: inline-block;
+}
+#wrapper>header>nav ul{
+	margin: 0px;
+	padding: 0px;
+	background-color: black;
+}
+#wrapper>header>nav ul a:hover{
+		transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	background-color: white;
+	color: black;
+}
+#wrapper>header>nav ul a{  
+	display: block;
+	height: 50px;
+	width: 128px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+/* Debut menu */	
+ #wrapper section {
+	width: 250px;
+	height: 500px;
+	background-color: grey;
+}
+#wrapper>section fieldset {
+	color:white;
+	background-color: black;
+	position: relative;
+	left: -20px;
+	background-color: grey;
+} 
+/* fin menu */
+
+/* Debut content */
+#wrapper>article {
+		width: 564px;
+		position: relative;
+		left: 255px;
+		bottom: 516px;
+
+}
+#wrapper>article div {
+	
+	display: block;
+
+
+}
+/* fin content */
+
+/* pub */
+#wrapper aside {
+	width: 200px;
+	position: fixed;
+	top: 1px;
+	margin-left: 824px;
+	margin-top: 271px;
+}
+/* fin pub */
+/* debut Target */
+#wrapper>article>div {
+	display: none;
+}
+
+#mytarget:target{
+display: none;
+}
+#mytarget2:target {
+	display: block;
+}
+#mytarget3:target {
+	display: block;
+}
+#mytarget4:target {
+	display: block;
+}
+#mytarget5:target {
+	display: block;
+}
+#mytarget6:target {
+	display: block;
+}
+#mytarget7:target {
+	display: block;
+}
+#mytarget8:target {
+	display: block;
+}
+/* fin target */
+
+/* debut slider */
+#slide{
+	left: 0px;
+	right: 0px;
+	position:relative;
+	display:block;
+	width:300px;
+	height:400px;
+	background-color:blue;
+	overflow: hidden;
+	transitoin:border-radiuss .5s ease 0s;
+}
+#ecran>span img{
+width: 300px;
+height: 400px;
+}
+#ecran{
+	left: 0px;
+	right: 0px;
+	position:relative;
+	display:block;
+	width:500%;
+	height:100%;
+}
+#slide:hover {
+	border-radius:75px 75px 75px 75px / 75px 75px 75px 75px; 
+}
+#ecran span{
+	left: 0px;
+	right: 0px;
+	display:inline-block;
+	width:300px;
+	height:400px;
+}
+/* fin slider */

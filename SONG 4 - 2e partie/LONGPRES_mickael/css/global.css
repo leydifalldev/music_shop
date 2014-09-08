@@ -1,0 +1,219 @@
+html{
+	margin:0;
+	padding:0;
+	background-color: #c9c9c9;
+}
+body{
+	margin:0;
+	padding:0;
+	width:1024px;
+	margin:auto;
+	font-size: 1em;
+	background-color: #c9c9c9;
+	font-family: Verdana;
+}
+#wrap{
+background-color: #8a8a8a;
+box-shadow:  -10px 0px 8px -3px rgba(50, 50, 50, 0.75),
+	         10px 0px 8px -3px rgba(50, 50, 50, 0.75);
+}
+
+/**** header ***/
+header{
+	height:150px;
+}
+header>section{
+	display: inline-block;
+	background-color: #8a8a8a;
+	vertical-align: top;
+}
+header>section:first-child{
+	width:20%;
+	text-align:center;
+}
+header>section+section{
+	background-color:grey;
+	height:100%;
+	width:80%;
+}
+/****** Fin header *****/
+/***connexion */
+
+header+section{
+	height:40px;
+	line-height:35px;
+	width:100%;
+	color:white;
+	font-weight: bold;
+	background-color: #6d6d6d;
+
+}
+header+section div{
+	display: inline-block;
+	margin:0;
+	padding:0;
+}
+header+section div:first-child{
+	width:65%;
+	padding-left:5%;
+}
+header+section div+div{
+	width:30%;
+	text-align: center;
+}
+header+section div+div a{
+	display: block;
+	height:40px;
+	color:white;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+header+section div+div a:hover{
+	background-color: #49c100;
+	color:black;
+}
+/*********Fin connexion ********/
+/********** Informations ******/
+header+section+section{
+	height:200px;
+	width: :100%;
+	background-color: #3a3a3a;
+	color:white;
+
+}
+header+section+section article,aside{
+	display: inline-block;	
+}
+header+section+section article{
+	width: 55%;
+	padding-left:5%;
+	padding-top:1%;
+}
+header+section+section aside{
+	width: 40%;
+	vertical-align: top;
+	text-align:center;
+
+}
+header+section+section h3{
+	color:#FF0000;
+}
+header+section+section aside a{
+	display: block;
+	height:200px;
+	font-size: 2em;
+	color:#67c07a;
+	line-height: 50px;
+	
+}
+header+section+section aside a:hover{
+	background-color:#00deff;
+	color:black;
+}
+
+/******* Fin informations ******/
+
+
+/******* Compositeurs *****/
+header+section+section+section article{
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom:40px;
+	text-align: center;
+	margin-right:18px;
+	margin-left:18px;
+}
+section+section+section h4{
+	margin:auto;
+}
+section+section+section h3{
+	margin-left:4%;
+	color:#0b899c;
+}
+header+section+section+section img{
+	width:300px;
+	height:350px;
+}
+section+section+section div{
+	text-align:left;
+	margin-left:10%;
+	display: none;
+}
+section+section+section a{
+	text-decoration: none;
+	color:white;
+}
+section+section+section a:hover{
+	color:#3e3e3e;
+}
+
+
+
+/****** Fin compositeurs ******/
+
+/******Footer ******/
+footer{
+	height: 150px;
+	color:white;
+	background-color: #3a3a3a;
+}
+footer section{
+	display: inline-block;
+	vertical-align: top;
+	height:100px;
+}
+footer section:first-child{
+	width: 31%;
+	padding-left:3%;
+}
+footer>section+section{
+	width: 33%;
+	line-height: 60px;
+	text-align:center;
+}
+footer>section+section+section{
+	width: 33%;
+	line-height: 150px;
+	text-align:center;
+}
+footer textarea{
+	width:200px;
+	height: 30px;
+}
+footer h3{
+	margin:0;
+	margin-bottom:5px;
+	margin-top:5px;
+	color:#bc0000;
+	text-decoration: underline;;
+}
+footer a{
+	text-decoration: underline;
+	color:white;
+}
+footer a:hover{
+	color:grey;
+}
+footer img:hover{
+	margin-bottom:2%;
+}
+/*** Fin footer****/ 
+
+
+#comp1:target{
+	display: block;
+}
+#comp2:target{
+	display: block;
+}
+#comp3:target{
+	display: block;
+}
+#comp4:target{
+	display: block;
+}
+#comp5:target{
+	display: block;
+}
+
+

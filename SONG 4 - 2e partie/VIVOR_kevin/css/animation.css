@@ -1,0 +1,21 @@
+/*ANIMATION*/
+
+#header #banniere #peli{
+	animation: slideone 5s linear infinite;
+
+	-moz-animation: slideone 5s linear infinite;
+
+}
+
+@keyframes slideone{
+	0% , 16.66%{left:0;}
+	33.33%,66.66%{left:-100%;}
+	83.33%,100%{left:-200%;}
+
+}
+@-moz-keyframes slideone{
+	0% , 16.66%{left:0;}
+	33.33%,66.66%{left:-100%;}
+	83.33%,100%{left:-200%;}
+
+}

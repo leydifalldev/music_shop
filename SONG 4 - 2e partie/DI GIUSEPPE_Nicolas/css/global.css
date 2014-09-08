@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'Harabara';
+    src: url('fonts/Harabara.eot'); 
+    src: url('fonts/Harabara.woff') format('woff'), 
+    url('font/Harabara.ttf') format('truetype'):;
+}
+body{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(169,3,41); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	font-family: 'Harabara',Arial, Helvetica, sans-serif;
+	text-align : justify;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s;
+	-moz-text-shadow: 1px 1px 3px #000;
+	-webkit-text-shadow: 1px 1px 3px #000;
+	text-shadow: 1px 1px 3px #000;
+}
+a:hover{
+	color: #FFBF00;
+	transition: 0.5s;
+}
+ul {
+		list-style-type: none;
+}
+.baseline {
+	position: relative;
+	bottom: 15px;
+	font-size: 13px;
+	width: 240px;
+	left: 34px;
+	-moz-text-shadow: 1px 1px 3px #000;
+	-webkit-text-shadow: 1px 1px 3px #000;
+	text-shadow: 1px 1px 3px #000;
+}
+.modal {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: #000;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modal > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #000;color:#fff; }
+@-webkit-keyframes AutoSlide {
+	0%, 15%, 100% {
+		left: 0px;
+	}
+	35%, 50% {
+		left: -700px; 
+	}
+	70%, 85% {
+		left: -1400px;
+	}
+}
+@-moz-keyframes AutoSlide {
+	0%, 15%, 100% {
+		left: 0px;
+	}
+	35%, 50% {
+		left: -700px;
+	}
+	70%, 85% {
+		left: -1400px;
+	}
+}
+@keyframes AutoSlide {
+	0%, 15%, 100% {
+		left: 0px;
+	}
+	35%, 50% {
+		left: -700px; 
+	}
+	70%, 85% {
+		left: -1400px;
+	}
+}
+
+#slideshow {
+	border: 1px solid #000;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	position: relative;    
+	width: 700px;         
+	height: 250px;
+	margin-left: auto;
+  	margin-right: auto;         
+	overflow: hidden;
+	margin-bottom: 30px;    
+}
+body > section:nth-child(2) {
+	bottom: 50px;
+	position: relative;
+}
+#goodies {
+	position: relative;
+	top: 20px;
+}
+#sContent li {
+	display: inline;     
+}
+#sContent {
+	position: absolute; 
+	top: 0;              
+	left: 0;          
+	width: 2100px;
+	margin: 0;            
+	padding: 0;
+	-webkit-animation-name: AutoSlide;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-name: AutoSlide;
+	-moz-animation-duration: 10s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in-out;
+	animation-name: AutoSlide;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+#compositeurs > div:nth-child(1) {
+	margin-left: 140px;
+}
+#compositeurs > div:nth-child(3) {
+	margin-left: 220px;
+}
+.compo > div {
+	float: left;
+}
+.compo > div > a > img {
+	width: 150px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.compo > div > ul > li {
+	width: 150px;
+	position: relative;
+	right: 40px;
+}
+#compositeurs > div:nth-child(3) > div:nth-child(1) {
+	margin-left: 20px;
+}
+#compositeurs > div:nth-child(3) > div:nth-child(n) {
+	margin-right: 40px;
+}
+nav {
+	position: fixed;
+	z-index: 9999;
+	margin-left: 388px;
+	top: -16px;
+}
+#menu {
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+}
+#menu li {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	transition: 1.0s;
+}
+#menu li > a{
+	color: white;
+	line-height: 30px;
+	font-size: 12px;
+	text-decoration: none;
+}
+#menu li:hover {
+	background: #7d7e7d;
+	color: black;
+	transition: 1.0s;
+}
+#top .shortInfos {
+	position: relative;
+	bottom: 139px;
+	left: 501px;
+	-moz-text-shadow: 1px 1px 3px #000;
+	-webkit-text-shadow: 1px 1px 3px #000;
+	text-shadow: 1px 1px 3px #000;
+}
+#evenement > div {
+	float: left;
+	width: 200px;
+	margin-right: 10px;
+	-moz-text-shadow: 1px 1px 3px #000;
+	-webkit-text-shadow: 1px 1px 3px #000;
+	text-shadow: 1px 1px 3px #000;
+}
+#evenement > div:first-child{
+	margin-left: 74px;
+}
+#evenement > div > h2 {
+	font-size: 18px;
+	text-align: center;
+}
+#toolbar {
+	position: fixed;
+	z-index: 9999;
+	width: 1000px;
+	bottom: 0px;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+	background: rgba(0,0,0,1);
+}
+#toolbar li {
+	display: inline-block;
+	height: 30px;
+	text-align: center;
+	transition: 1.0s;
+}
+#toolbar li:nth-child(n+2) {
+	position: relative;
+	left: 166px;
+	margin-right: 20px;
+	bottom: 8px;
+}
+#toolbar li > a{
+	color: white;
+	line-height: 30px;
+	font-size: 18px;
+	text-decoration: none;
+	transition: 1.0s;
+}
+audio{
+	position: relative;
+	right: 287px;
+}
+#toolbar a:hover {
+	color: #FFBF00;
+	transition: 1.0s;
+}
+footer {
+	margin-bottom: 100px;
+}
+#contact > ul > li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#contact > ul > li:last-child{
+	margin-left: 300px;
+}

@@ -1,0 +1,226 @@
+@import url("animation.css");
+
+body{
+	background-color:#ddd;
+}
+
+img{
+	max-width: 600px;
+	max-height: 600px;
+	display: block;
+	border-radius: 10px;
+}
+h1 {
+	display: inline;
+	text-align: center;
+}
+/* HEADER */
+header{
+	border-radius: 5px;
+	background-color: #aaa; 
+	display: block;
+	overflow: hidden;
+}
+
+header img{
+	max-height: 70px;
+	max-width: 70px;
+}
+#logo{
+	float: left;
+}
+#logo img{
+	display: inline;
+}
+#titre {
+	text-align: center;
+}
+#social{
+	float: right;
+}
+#social img{
+	display: inline;}
+/* FIN HEADER */
+
+/* PRESENTATION */
+#presentation{
+	display: block;
+	margin: 5px 5px 5px 5px ;
+	padding:  5px 5px 5px 5px ;
+	/* background-color: green; */
+}
+#desc{
+	width: 25%;
+	display: inline-block;
+	margin-right: 100px;
+}
+#desc img{
+	max-height: 400px;
+	max-width: 400px;	box-shadow:  -5px -5px 6px rgba(0,0,0,0.2) inset, 
+	 -20px -20px 6px rgba(0,0,255,0.1) inset, 
+	  5px 5px 6px rgba(255,255,255,0.8) inset, 
+	   5px 5px 6px rgba(0,0,0,0.8) ;
+}
+#slide{
+	display: inline-block;
+	right: 0;
+}
+/* FIN PRESENTATION */
+
+
+/* SLIDE */
+#slide{
+	/*left:400px;*/
+	/*float: right;*/
+	/*position: absolute;*/
+	width:1200px;
+	/*width: 33%;*/
+	height:400px;
+	overflow: hidden;
+}
+
+#ecran{
+	position:relative;
+	width: 2300%;
+	top:0;
+}
+
+.film{
+	display: inline-block;
+	width: 1200px;
+	/*width: 33%;*/
+	height:400px;
+}
+.desc_film{
+	display: block;
+	/* background-color: white; */
+	width: 800px;
+	height: 400px;
+	/*display: inline;*/
+	float: right;
+}
+.image_film{
+	float: left;
+	/*display: inline;*/
+	/*width: 400px;
+	height: 400px;*/
+	/* background-color: black; */
+}
+#ecran img{
+	max-width: 250px;
+	max-height: 300px;	
+	box-shadow:  -5px -5px 6px rgba(0,0,0,0.2) inset, 
+	 -20px -20px 6px rgba(0,0,255,0.1) inset, 
+	  5px 5px 6px rgba(255,255,255,0.8) inset, 
+	   5px 5px 6px rgba(0,0,0,0.8) ;
+	/*float:left;*/
+	/*display: inline-block;*/
+}
+/* FIN SLIDE */
+
+/* COMPOSITEURS */
+.compositeur{
+	display: inline-block;
+	width: 23%;
+	margin: 5px 5px 5px 5px ;
+	padding:  5px 5px 5px 5px ;
+	/* background-color: cyan; */
+}
+.compositeur img{
+	max-width: 300px;
+	max-height: 300px;
+		box-shadow:  -5px -5px 6px rgba(0,0,0,0.2) inset, 
+	 -20px -20px 6px rgba(0,0,255,0.1) inset, 
+	  5px 5px 6px rgba(255,255,255,0.8) inset, 
+	   5px 5px 6px rgba(0,0,0,0.8) ;
+}
+.compositeur img:hover{
+	transition: all .2s ease .1s, background-color .2s ease .2s;
+	border-radius: 100px;
+}
+/* FIN COMPOSITEUR */
+
+/* INFORMATION */
+#informations{
+	display: block;
+	overflow: hidden;
+	margin: 5px 5px 5px 5px ;
+	padding:  5px 5px 5px 5px ;
+	/* background-color: yellow; */
+}
+#plan{
+	display: inline-block;
+	/*width: 20%;*/
+	margin: 5px 5px 5px 5px ;
+	padding:  5px 5px 5px 5px ;
+}
+#plan img{
+	display: inline-block;
+}
+#pratique{
+	display: inline-block;
+	width: 70%;
+	margin: 5px 5px 5px 5px ;
+	padding:  5px 5px 5px 5px ;
+}
+footer{
+	border-radius: 5px;
+	background: grey; 	
+	bottom: 0;
+	right:0;
+	position: fixed;
+	margin: 5px 5px 5px 5px;
+	padding:  5px 5px 5px 5px;
+}
+footer a{
+	display: inline-block;
+	color: white;
+}
+/* FIN INFORMATION*/
+
+@media screen and (max-width: 1250px){
+	body{
+		font-size: .9em;
+	}
+	.compositeur img{
+		max-width: 100px;
+		max-height: 100px;
+	}
+	#desc img{
+		overflow:visible;
+	}
+	.compositeur{
+		width: auto;
+	}
+	#slide{
+		width: 800px:;
+	}
+	.films{
+		width: 800px;
+	}
+
+	.desc_film {
+		float: none;
+		padding: 20px;
+		margin: 20px;
+	}
+	.desc_film h3{
+		padding: 20px;
+		margin: 20px;
+		text-align: right;
+	}
+	.desc_film p{
+
+	}
+	#ecran img{
+		max-width: 100px;
+	}
+}
+@media screen and (max-width: 801px){
+	.desc_film{
+		max-width: 600px;
+	}
+	.desc_film h3{
+		text-align: right;
+	}
+}

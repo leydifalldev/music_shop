@@ -1,0 +1,314 @@
+/*##### GLOBAL #####*/
+html{
+	font-size: 100%;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+	list-style-type: none; 
+}
+
+section,
+header,
+nav{
+	border-radius: 10px;
+}
+/*##### FIN GLOBAL #####*/
+
+/*##### HEADER #####*/
+#main>header{
+	position: relative;
+	margin: auto;
+	width: 1024px;
+	height: 300px;
+	box-shadow: 0 0 10px;
+	margin-bottom: 20px; 
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 10px;
+	background: url(../images/ban.jpg) no-repeat;
+	background-size: inherit;
+	background-position: right;
+}
+
+/*##### FIN HEADER #####*/
+
+/*##### CONTAINER #####*/
+#container{
+	position: relative;
+	margin: auto;
+	width: 1024px;
+	background: transparent;
+}
+
+#container>section,
+#container>aside{
+	display: inline-block;
+}
+
+#container>section{
+	margin-right: 20px;
+}
+/*##### FIN CONTAINER #####*/
+
+/*##### LEFT SECTION #####*/
+
+#container>section:nth-of-type(1){
+	width: 260px;
+	position: relative;
+	top: 0;
+}
+
+#container>section>nav{
+    top: 320px;
+}
+
+
+#compte{
+	top: 450px;
+}
+
+#container>section>nav,
+#compte{
+	box-shadow: 0 0 10px;
+    position: fixed;
+    width: 260px;
+}
+
+/*##### FIN LEFT SECTION #####*/
+
+/*##### RIGHT SECTION #####*/
+
+#container>section:nth-of-type(2){
+	width: 680px;
+	margin-top: 20px;
+}
+
+#carrousel{
+	width:680px;
+	height:320px;
+	box-shadow: 0 0 10px;
+	position: relative;
+	overflow:hidden;
+}
+
+	/*###### PELI ######*/
+	#peli{
+		position: relative;
+		width: 500%;
+		height: 100%;
+		-webkit-animation:slideshow 10s infinite;
+		-moz-animation:slideshow 10s infinite;
+		-ms-animation:slideshow 10s infinite;
+		-o-animation:slideshow 10s infinite;
+		animation:slideshow 10s infinite;
+	}
+	/*###### FIN PELI ######*/
+
+	/*###### IMG ######*/
+	#peli div{
+		display: inline-block;
+		height: 100%;
+		width: 680px;
+	}
+
+	#peli div:nth-of-type(1){
+		background: url(../images/technics-q-c-680-320-6.jpg);
+	}
+
+	#peli div:nth-of-type(2){
+		background: url(../images/technics-q-c-680-320-5.jpg);
+	}
+
+	#peli div:nth-of-type(3){
+		background: url(../images/technics-q-c-680-320-2.jpg);
+	}
+
+	#peli div:nth-of-type(4){
+		background: url(../images/technics-q-c-680-320-10.jpg);
+	}
+
+	#peli div:nth-of-type(5){
+		background: url(../images/technics-q-c-680-320-6.jpg);
+	}
+
+	/*###### FIN IMG ######*/
+
+	/*###### ANIMATION ######*/
+	@keyframes slideshow{
+		0%, 12% {left: 0;}
+		25%, 37% {left: -100%;}
+		50%, 62% {left: -200%;}
+		75%, 87% {left: -300%;}
+		100% {left: -400%;}
+	}
+
+	@-webkit-keyframes slideshow{
+		0%, 12% {left: 0;}
+		25%, 37% {left: -100%;}
+		50%, 62% {left: -200%;}
+		75%, 87% {left: -300%;}
+		100% {left: -400%;}
+	}
+	/*###### FIN ANIMATION ######*/
+
+#compositeurs{
+	position: relative;
+}
+
+#compositeurs>div{
+	display: inline-block;
+	width: 200px;
+	height: 250px;
+	margin: 20px 20px 0 0;
+	color: white;
+	text-align: center;
+}
+
+#compositeurs a {
+	color: white;
+}
+
+#compositeurs>div:nth-of-type(1){
+	background: url(../images/John_Williams.jpg);
+	background-size: cover;
+}
+
+#compositeurs>div:nth-of-type(2){
+	background: url(../images/Jerry_Goldsmith.jpg);
+	background-size: cover;
+
+}
+
+#compositeurs>div:nth-of-type(3){
+	background: url(../images/Hans_Zimmer.jpg);
+	background-size: cover;
+
+}
+
+#compositeurs>div:nth-of-type(4){
+	background: url(../images/JAmes_Horner.jpg);
+	background-size: cover;
+
+}
+
+#compositeurs>div:nth-of-type(5){
+	background: url(../images/Danny_Elfman.jpg);
+	background-size: cover;
+
+}
+
+#compositeurs>div:nth-of-type(6){
+	background: url(../images/Alan_Silvestri.jpg);
+	background-size: cover;
+}
+
+#compositeurs>div:nth-of-type(7){
+	background: url(../images/joehisaichi.jpg);
+	background-size: cover;
+}
+
+#compositeurs>div:nth-of-type(1),
+#compositeurs>div:nth-of-type(4),
+#compositeurs>div:nth-of-type(7){
+	margin-left: 20px;
+}
+
+#compositeurs>div>div:nth-of-type(1){
+	background: rgba(128, 128, 128, 0.6);
+	border-bottom: 1px solid #fff;
+}
+
+#extraits img{
+	height:75px;
+	width: 60px;
+}
+
+#extraits>div>div{
+	width: 680px;
+	position: relative;
+	box-shadow: 0 0 10px;
+	margin: 20px 0;
+}
+
+#extraits audio{
+	position: absolute;
+	right: 0;
+}
+
+#boutique img{
+	height:200px;
+	width: 200px;
+	box-shadow: 0 0 10px;
+	transition: all 0.5s ease 0s;
+}
+
+#boutique>div>a>span{
+	position: absolute;
+}
+
+#boutique>div{
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+}
+
+#boutique img:hover{
+	border-radius: 100px
+}
+
+/*##### FIN RIGHT SECTION #####*/
+
+/*##### ASIDE #####*/
+#container>aside>ul{
+	position: fixed;
+	width:44px;
+	top: 320px;
+	margin: 0;
+	padding: 0;
+}
+
+
+#container>aside>ul>a>li>span{
+	display:none;
+}
+
+#container>aside>ul>a>li{;
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+	box-shadow: 0 0 10px;
+	margin-bottom: 5px;
+}
+
+
+#container>aside>ul>a>li{
+	background-image: url(../images/up.jpg);
+	background-size:contain;
+}
+
+#container>aside>ul>a:nth-of-type(2)>li{;
+	background-image: url(../images/panier.jpg);
+	background-size:contain;
+}
+
+#container>aside>ul>a:nth-of-type(3)>li{;
+	background-image: url(../images/fb.jpg);
+	background-size:contain;
+}
+
+#container>aside>ul>a:nth-of-type(4)>li{;
+	background-image: url(../images/twitter.jpg);
+	background-size:contain;
+}
+/*##### FIN ASIDE #####*/
+
+/*##### FORM #####*/
+form{
+	margin: 20px;
+}
+/*##### FIN FORM #####*/

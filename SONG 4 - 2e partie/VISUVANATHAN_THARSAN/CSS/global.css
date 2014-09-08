@@ -1,0 +1,479 @@
+/****************
+                                                                         
+ /__  ___/ //    / / // | |     //   ) )  //   ) )  // | |     /|    / / 
+   / /    //___ / / //__| |    //___/ /  ((        //__| |    //|   / /  
+  / /    / ___   / / ___  |   / ___ (      \\     / ___  |   // |  / /   
+ / /    //    / / //    | |  //   | |        ) ) //    | |  //  | / /    
+/ /    //    / / //     | | //    | | ((___ / / //     | | //   |/ /     
+
+PROJET : SONG 4
+AUTEUR : VISUVANATHAN THARSAN;
+DATE : VENDREDI 28 MARS;
+CLASSE : RPI D6;
+
+****************/
+
+/* COLORS : 
+
+RED : #993333;
+BLACK : #383838;
+
+*/
+
+/* @font-face : */
+
+@font-face { 
+	font-family: 'open_regular';
+	src: url('../FONTS/open_sans/regular.eot');
+	src: url('../FONTS/open_sans/regular.eot?#iefix') format('embedded-opentype'),
+	     url('../FONTS/open_sans/regular.woff') format('woff'),
+	     url('../FONTS/open_sans/regular.ttf') format('truetype'),
+	     url('../FONTS/open_sans/regular.svg') format('svg');
+}
+
+@font-face { 
+	font-family: 'open_italic';
+	src: url('../FONTS/open_sans/italic.eot');
+	src: url('../FONTS/open_sans/italic.eot?#iefix') format('embedded-opentype'),
+	     url('../FONTS/open_sans/italic.woff') format('woff'),
+	     url('../FONTS/open_sans/italic.ttf') format('truetype'),
+	     url('../FONTS/open_sans/italic.svg') format('svg');
+}
+
+@font-face { 
+	font-family: 'open_light';
+	src: url('../FONTS/open_sans/light.eot');
+	src: url('../FONTS/open_sans/light.eot?#iefix') format('embedded-opentype'),
+	     url('../FONTS/open_sans/light.woff') format('woff'),
+	     url('../FONTS/open_sans/light.ttf') format('truetype'),
+	     url('../FONTS/open_sans/light.svg') format('svg');
+}
+
+@font-face { 
+	font-family: 'open_bold';
+	src: url('../FONTS/open_sans/bold.eot');
+	src: url('../FONTS/open_sans/bold.eot?#iefix') format('embedded-opentype'),
+	     url('../FONTS/open_sans/bold.woff') format('woff'),
+	     url('../FONTS/open_sans/bold.ttf') format('truetype'),
+	     url('../FONTS/open_sans/bold.svg') format('svg');
+}
+
+
+/* GENERAL : */
+
+*,*:before,*:after
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+body
+{
+	padding:0;
+	margin:0;
+	font-size:100%;
+	color:#383838;
+	font-family: 'open_regular';
+	background white;
+	background-color:black;
+}
+
+a
+{
+	text-decoration:none;
+	color:black;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-ms-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+a:hover
+{
+	color:#993333;
+}
+
+a:active,a:focus,a:visited
+{
+	color:black;
+	outline:0;
+	text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin:0;
+}
+
+ul
+{
+	margin:0;
+	padding:0;
+}
+
+li
+{
+	list-style-type:none;
+}
+
+#wrapper
+{
+	position:relative;
+	width:1024px;
+	margin:15px auto;
+	padding:4px;
+	border-top:4px solid #993333;
+	border-bottom:4px solid #993333;
+	background-color:white;
+	overflow:hidden;
+}
+
+/* Header */
+
+#main-header
+{
+	position:relative;
+	width:100%;
+	height:100px;
+	overflow:hidden;
+	background:url('../IMAGES/bg.png') center no-repeat;
+}
+
+#header-buttons
+{
+	position:absolute;
+	width:200px;
+	height:100px;
+	top:0;
+	right:0;
+}
+
+#header-buttons > nav > ul > li
+{
+	display:inline-block;
+}
+
+#header-buttons > nav > ul > li > a
+{
+	display:block;
+	padding:7px;
+	background-color:black;
+	color:white;
+	text-transform: uppercase;
+	font-size:13px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#header-buttons > nav > ul > li > a:hover
+{
+	background-color: #993333;
+}
+
+
+/* Menu */
+
+#menu-main
+{
+	width:100%;
+	height:50px;
+	color:white;
+	background-color:#383838;
+	margin-top:10px;
+	overflow:hidden;
+}
+
+#menu-main > ul > li
+{
+	display:inline-block;
+	text-align:center;
+}
+
+#menu-main > ul > li a
+{
+	display:block;
+	width:145px;
+	color:white;
+	overflow:hidden;
+	font-size:15px;
+	font-family: 'open_bold';
+	line-height:50px;
+	text-transform:uppercase;
+	border-right:1px solid #494949;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#menu-main > ul > li a:hover
+{
+	background-color:#993333;
+}
+
+/* COMPOSITORS LIST */
+
+#compositors
+{
+	width:100%;
+	height:250px;
+	margin-top:10px;
+	text-align:center;
+	overflow:hidden;
+}
+
+#compositors > div
+{
+	display:inline-block;
+	width:144.8px;
+	height:250px;
+	cursor:pointer;
+	overflow:hidden;
+}
+
+#compositors > div > a
+{
+	display:block;
+	position:relative;
+	width:144.8px;
+	height:250px;
+	overflow:hidden;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#compositors > div > a > h3
+{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	background-color:black;
+	color:white;
+	font-family: 'open_light';
+	font-weight:300;
+	padding:5px 0px;
+	opacity:0.8;
+	font-size:15px;
+	text-transform: uppercase;
+}
+
+#compositors > div:nth-child(1) > a
+{
+	background:url('../IMAGES/compositor/john-williams.jpg');
+}
+
+#compositors > div:nth-child(2) > a
+{
+	background:url('../IMAGES/compositor/jerry-goldsmith.jpg');
+}
+
+#compositors > div:nth-child(3) > a
+{
+	background:url('../IMAGES/compositor/hans-zimmer.jpg');
+}
+
+#compositors > div:nth-child(4) > a
+{
+	background:url('../IMAGES/compositor/james-horner.jpg');
+}
+
+#compositors > div:nth-child(5) > a
+{
+	background:url('../IMAGES/compositor/danny-elfman.jpg');
+}
+
+#compositors > div:nth-child(6) > a
+{
+	background:url('../IMAGES/compositor/alan-silvestri.jpg');
+}
+
+#compositors > div:nth-child(7) > a
+{
+	background:url('../IMAGES/compositor/joe-hisaishi.jpg');
+}
+
+
+#compositors > div > a:hover
+{
+	-ms-transform: scale(1.3); /* IE 9 */
+	-webkit-transform: scale(1.3); /* Chrome, Safari, Opera */
+	transform: scale(1.3);
+}
+
+/* COMPOSITOR DETAILS */
+
+#compositors-details
+{
+	width:700px;
+	display:inline-block;
+	margin-top:10px;
+}
+
+#compositors-details > h4
+{
+	padding:5px;
+	background-color:#383838;
+	color:white;
+	font-family: 'open_regular';
+	text-transform: uppercase;
+	font-size:14px;
+}
+
+#compositors-details > div
+{
+	margin-top:20px;
+	padding-bottom:20px;
+	border-bottom:1px solid #535353;
+}
+
+#compositors-details > div > .photo
+{
+	width:145px;
+	display:inline-block;
+	overflow:hidden;
+}
+
+#compositors-details > div > .info
+{
+	width:330px;
+	display:inline-block;
+	overflow:hidden;
+	vertical-align:top;
+	margin-top:5px;
+	padding:0px 10px;
+}
+
+#compositors-details > div > .info > h4
+{
+	font-size:14px;
+	text-transform: uppercase;
+}
+
+#compositors-details > div > .info > p
+{
+	font-size:13px;
+}
+
+#compositors-details > div > .film-list
+{
+	width:200px;
+	display:inline-block;
+	overflow:hidden;
+	padding:5px;
+	vertical-align:top;
+	margin-top:5px;
+	border:1px solid grey;
+} 
+
+#compositors-details > div > .film-list > ul > li > a
+{
+	display:block;
+	font-size:12px;
+	color:white;
+	background-color:#383838;
+	padding:3px 7px;
+	margin-bottom:5px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#compositors-details > div > .film-list > ul > li > a:hover
+{
+	background-color:#993333;
+}
+
+
+/* NEWS MUSIC */
+
+#music-news
+{
+	width:300px;
+	display:inline-block;
+	margin-top:10px;
+	margin-left:10px;
+	vertical-align:top;
+	padding-left:10px;
+	border-left:1px solid grey;
+}
+
+#music-news > h4
+{
+	padding:5px;
+	background-color:#383838;
+	color:white;
+	font-family: 'open_regular';
+	text-transform: uppercase;
+	font-size:14px;
+} 
+
+#music-news > div
+{
+	margin-top:20px;
+	padding-bottom:10px;
+	border-bottom:1px solid grey;
+}
+
+#music-news > div > .news-photo
+{
+	display:inline-block;
+	width:100px;
+	height:100px;
+}
+
+#music-news > div > .news-title
+{
+	display:inline-block;
+	width:180px;
+	vertical-align:top;
+	font-family: 'open_bold';
+	font-size:14px;
+	background-color:#383838;
+	color:white;
+	padding:5px;
+	margin-top:4px;
+}
+
+#music-news > div > .news-summary
+{
+	font-size:13px;
+}
+
+#music-news > div > .news-read-more
+{
+	display:block;
+	width:50px;
+	padding:7px;
+	margin-top:5px;
+	background-color:#993333;
+	color:white;
+	text-transform: uppercase;
+}
+
+/* FOOTER */
+
+#main-footer
+{
+	width:100%;
+	height:120px;
+}
+
+#main-footer > a
+{
+	font-size:13px;
+	font-family: 'open_bold';
+}

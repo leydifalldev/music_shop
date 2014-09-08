@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 1024px;
+	margin: auto;
+	padding: 0;
+	background-color: rgb(50,100,200);
+}
+
+header{
+	text-align: center;
+	background-color: rgb(100, 175, 250);
+	border-bottom-right-radius:20px;
+	border-bottom-left-radius:20px; 
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+h1{
+	text-align: center;
+}
+
+li{
+	list-style: none;
+}
+
+#content{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/* Photos de l'endroit */
+#place-pictures{
+	width: 500px;
+	margin: auto;
+	padding: 0;
+	margin-bottom: 50px;
+}
+
+#place-pictures img{
+	display: inline-block;
+	margin-top: 50px;
+	width: 100px;
+	height: 100px;
+	transition: height 0.2s ease 0s, width 0.2s ease 0s;
+	z-index: 10;
+}
+
+#place-pictures img:hover{
+	/*width: 200px;
+	height: 200px;*/
+	transform: scale(2);
+	transition: height 0.2s ease 0s, width 0.2s ease 0s;
+}
+/*diaporama des compositeurs */
+#diapo_comp{
+	width: 500px;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	margin: auto;
+	padding: 0;
+	background-color: rgb(100, 175, 250);
+	margin-bottom: 50px;
+}
+
+#diapo_comp #peli_comp:hover{
+	animation-play-state:paused;
+}
+
+#diapo_comp #peli_comp{
+	width: 800%;
+	height: 100%;
+	position: relative;
+	-moz-animation: slideshow 20s linear 0s infinite; 
+	animation: slideshow 20s linear infinite;
+}
+
+#diapo_comp #peli_comp>div{
+	width: 500px;
+	height: 100%;
+	display: inline-block;
+	background-color: rgb(100, 175, 250);
+	vertical-align: top;
+}
+#peli_comp div img{
+	width: 200px;
+	height: 150px;
+	float: left;
+}
+
+@keyframes slideshow{
+	0%,4.5%{left: 0;}
+	9%,18%{left: -100%;}
+	22.5%,31.5%{left: -200%;}
+	35%,44%{left: -300%;}
+	48.5%,57.5%{left: -400%;}
+	62%,71%{left: -500%;}
+	75.5%,85.5%{left: -600%;}
+	89%,100%{left: -700%;}
+}
+
+/*Center de la page avec l'incription et le vote*/
+
+#middle{
+	margin: auto;
+	padding: 0;
+	width: 500px;
+	margin-bottom: 50px;
+}
+
+#middle div{
+	display: inline-block;
+	width: 250px;
+}
+
+fieldset{
+	border: none;
+	margin-bottom: 3px;
+}
+
+form{
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 1px;
+	padding: 5px;
+	background-color: rgb(100, 175, 250);
+}
+
+/* Boutique*/
+
+#shop{
+	width: 400px;
+	margin: auto;
+	padding: 0;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 5px;
+	background-color: rgb(100, 175, 250);
+}
+
+#shop div{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	padding: 0;
+}
+
+#shop div img{
+	width: 100px;
+	height: 100px;
+}

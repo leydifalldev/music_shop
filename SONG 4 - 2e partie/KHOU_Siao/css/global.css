@@ -1,0 +1,182 @@
+/*#############################################
+
+	Projet : RPID6 - SONG 4                 
+ 	Auteur : SK								
+	Date   : mars 2014                      
+    Version: 1.0							
+
+#############################################*/
+
+/**********************************************
+*			GENERAL
+**********************************************/
+body{
+	margin: 0;
+	background-color: #F2F2F2;
+}
+
+#wrapper{
+	width: 1024px;
+	margin: auto;
+	font-size: 0.938em;
+	font-family: 'Trebuchet ms',verdana, sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #6B7749;
+}
+
+/**********************************************
+*			SECTION HEADER
+**********************************************/
+header{
+	width: 1024px;
+	height: 225px;
+	background: url("../images/img_009.jpg") no-repeat;
+}
+
+header>img{
+	position: relative;
+	top: -97px;
+	margin: 0 30px 0 20px ;
+	border-radius: 10px;
+}
+
+header>.titre_header{
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 650px;
+	height: 190px;
+	margin: 15px 50px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+header>.titre_header h1{
+	font-size: 1.8em;
+}
+
+header>.titre_header h1, header>.titre_header h3{
+	margin: 10px;
+}
+
+/**********************************************
+*			SECTION CONTENU
+**********************************************/
+
+
+#wrapper>#contenu>#section_presentation{
+	margin:30px;
+	padding:20px;
+	text-align: center;
+	box-shadow: 2px 2px 6px #5D6333;
+}
+
+#wrapper>#contenu>section .titre_contenu{
+	font-size: 1.2em;
+}
+
+#wrapper>#contenu>section>div+.compositeur{
+	position:relative;
+}
+
+
+#wrapper>#contenu>section>div+.compositeur a{
+	margin: 0 3px;
+	width: 136px;
+	height: 126px;
+	display: inline-block;
+	text-align: center;
+}
+
+#john_williams, #jerrygoldsmith, #hanszimmer, #jameshorner, 
+#dannyeflman, #alansilvestri, #joehisaishi {
+	display: none;
+}
+
+#john_williams:target, #jerrygoldsmith:target, #hanszimmer:target, #jameshorner:target, 
+#dannyeflman:target, #alansilvestri:target, #joehisaishi:target{
+	display:block;
+}
+
+.musique_liste{
+	display:inline-block;
+	width: 600px;
+	height: 400px;
+	padding:10px;
+	margin:0 10px 20px;
+	float:left;
+	box-shadow: 2px 2px 6px #5D6333;
+}
+
+
+.musique_liste ul li{
+	list-style: none;
+	width: 200px;
+}
+
+.biographie{
+	display:inline-block;
+	width: 300px;
+	height:400px;
+	padding:20px 20px 0;
+	margin:0 10px;
+	float:left;
+	box-shadow: 2px 2px 6px #5D6333;
+}
+
+.clear{
+	clear: both;
+}
+
+#formulaire{
+	display:inline-block;
+	float: left;
+}
+
+#formulaire fieldset, input{
+	border:none;
+}
+
+#formulaire form{
+	width:500px;
+	margin-left: 20px;
+	padding:5px;
+}
+
+#formulaire input[type="submit"]{
+	background-color:#BFBFBF;
+	padding:5px;
+	cursor:pointer;
+}
+
+#formulaire input[type="submit"]:hover{
+	background-color:#5D6333;
+	color:#eee;
+}
+
+#reseaux_sociaux{	
+	float: left;
+	display:block;
+}
+
+
+#footer_info{
+	width:100%;
+}
+
+#footer_info #evenement_footer{
+	display: inline-block;
+	width:50%;
+	float: left;
+
+}
+
+
+
+#footer_info #plan{
+	display: inline-block;
+	width:50%;
+	float: left;
+}
